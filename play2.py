@@ -11,20 +11,16 @@ def type_text(text, delay=0.05):
 def get_song_for_name(name):
     name = name.lower()
     songs = {
-        "sara": "🎶 *Sara* by Starship\nSara, you're the poet in my heart...",
-        "layla": "🎶 *Layla* by Eric Clapton\nLayla, you've got me on my knees...",
-        "julia": "🎶 *Julia* by The Beatles\nJulia, Julia, ocean child...",
-        "roxanne": "🎶 *Roxanne* by The Police\nRoxanne, you don't have to put on the red light...",
-        "amanda": "🎶 *Amanda* by Boston\nI'm gonna say it like a man, and make you unlayladerstand, Amanda...",
+        
+        "muath": "🎶 *muath* by Leah, In a world that spins both fast and wide, You’ve been my calm, my steady tide. Not by blood, but choice and grace, A true companion in life’s long race. You hear the words I never say,So here’s to you, my dear, my friend, A bond I hope will never end.No treasure greater could I find,Than someone with your heart and mind.",
     }
 
     if name in songs:
         return f"\n{name.title()}, this song is for you!\n\n{songs[name]}"
     else:
-        return f"\n{name.title()}, you're special — but I don't have a song just for your name.\nHere's a beautiful lyric for you anyway:\n\n🎶 You are amazing, just the way you are 🎶\n— Bruno Mars"
-
+        return f"\n{name.title()}, you're special — but I don't have a song just for you.\n\nHere's a little something instead:\n\n{name.title()}, you're amazing just the way you are<3!"
 def main():
-    name = input("Hi, Baby girl! What's your name?: ").strip()
+    name = input("Hi, Baby! What's your name?: ").strip()
     if not name.isalpha():
         print("Please enter a valid name using only letters.")
         return
