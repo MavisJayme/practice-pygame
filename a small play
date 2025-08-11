@@ -1,0 +1,17 @@
+
+#play a song lyrics when the user enters their nameleah 
+#pip install pygame
+
+print("Enter your name:")
+name = input()
+    
+import pygame, sys, time
+#initialize pygame
+pygame.init()
+
+pygame.mixer.init()
+pygame.mixer.music.load("Leah/song1.mp3")
+pygame.mixer.music.play()
+
+
+print("Playing music... Press Ctrl+s to stop.")
